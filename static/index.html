@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Контур — компьютер под ваши задачи</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<link rel="stylesheet" href="/chat-format.css">
+<aside class="sidebar"><a class="brand" href="/">к<span>о</span>нтур<span class="brand-dot">↗</span></a><div class="brand-caption">ТЕХНИКА С ПОНЯТНЫМ ВЫБОРОМ</div><button id="new-chat" class="primary">＋ Новая консультация</button><div class="sidebar-label">ВАШИ ДИАЛОГИ</div><nav id="sessions" aria-label="История диалогов"></nav><div class="sidebar-foot"><span class="status-dot"></span><span id="model-status">Проверяем Qwen…</span><small>Локальная модель · история в SQLite</small></div></aside>
+<main>
+<header><div><span class="eyebrow">ПЕРСОНАЛЬНЫЙ ПОДБОР</span><h1>Сначала задачи. Потом техника.</h1></div><div class="tabs"><button id="chat-tab" class="active">Консультант</button><button id="catalog-tab">Каталог <span>100</span></button></div></header>
+<section id="chat-view"><div id="messages" aria-live="polite"></div><div class="composer-wrap"><div id="request-status" role="status"></div><form id="chat-form"><label class="sr-only" for="prompt">Ваше сообщение</label><textarea id="prompt" placeholder="Расскажите, для чего вам компьютер и какой бюджет…" rows="2" maxlength="4000" required></textarea><button id="send" type="submit" aria-label="Отправить сообщение">↑</button></form><div class="composer-note">Qwen 3.5 · 4B <span>Ответы ИИ могут содержать ошибки. Сверяйте характеристики с источником.</span></div></div></section>
+<section id="catalog-view" hidden><div class="catalog-heading"><div><h2>100 способов найти своё</h2><p>50 ноутбуков и 50 готовых компьютеров · цены в рублях</p></div><label class="search"><span class="sr-only">Поиск по каталогу</span><input id="search" placeholder="Название, процессор, видеокарта…"></label></div><div class="filters"><button class="active" data-kind="">Вся техника</button><button data-kind="laptop">Ноутбуки</button><button data-kind="desktop">Компьютеры</button><span id="count"></span></div><div class="price-disclaimer" id="price-note"></div><div id="products" class="product-grid"></div></section>
+<footer>КОНТУР / УЧЕБНЫЙ ПРОЕКТ <span>Интеграция ИИ-ассистента в бэкэнд приложения</span></footer>
+</main></body></html>

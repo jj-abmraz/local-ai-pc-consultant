@@ -1,0 +1,6 @@
+.message.assistant .bubble { white-space: normal; }
+.bubble p { margin: 0 0 12px; }
+.bubble p:last-child { margin-bottom: 0; }
+.bubble ol, .bubble ul { margin: 10px 0 14px; padding-left: 24px; }
+.bubble li { margin: 7px 0; }
+.bubble code { background: #edf1eb; padding: 2px 5px; border-radius: 4px; }
